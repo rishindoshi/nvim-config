@@ -21,14 +21,15 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'windwp/nvim-autopairs'
 
 vim.call('plug#end')
 
-require("colorscheme")
-require("keymaps")
+require("core.colorscheme")
+require("core.keymaps")
 
 require("plugins.nvim-tree")
 require("plugins.telescope")
 require("plugins.treesitter")
 require("plugins.nvim-cmp")
-
+-- require("plugins.autopairs")

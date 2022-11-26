@@ -4,6 +4,7 @@ vim.g.seoul256_contrast = false
 require('seoul256')
 
 require('lualine').setup()
+
 require('rose-pine').setup({
 	--- @usage 'main' | 'moon'
 	dark_variant = 'main',
