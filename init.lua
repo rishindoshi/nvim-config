@@ -20,16 +20,30 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'L3MON4D3/LuaSnip'
-Plug 'hrsh7th/nvim-cmp'
 Plug 'windwp/nvim-autopairs'
+Plug 'shaunsingh/nord.nvim'
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'neanias/everforest-nvim'
+Plug 'junegunn/seoul256.vim'
 
 vim.call('plug#end')
 
-require("core.colorscheme")
+vim.cmd[[let g:seoul256_background=235]]
+vim.cmd[[colo seoul256]]
+
+--require("core.colorscheme")
 require("core.keymaps")
 
+-- require("plugins.treesitter")
+require('lualine').setup()
 require("plugins.nvim-tree")
 require("plugins.telescope")
-require("plugins.treesitter")
 require("plugins.nvim-cmp")
 require("plugins.autopairs")
+
